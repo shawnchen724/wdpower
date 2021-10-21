@@ -1,0 +1,43 @@
+{{extend "./common/layout.html"}} {{block 'title'}}
+<title>生产现场 - 无锡动力工程股份有限公司</title>
+{{/block}} {{block 'style'}}{{/block}} 
+{{block 'link'}}
+<link rel="stylesheet" href="/css/innav.css">
+<link rel="stylesheet" href="/css/inmain.css">
+<link rel="stylesheet" href="/css/inbanner.css">
+{{/block}}
+{{block 'content'}}
+<div class="inbanner">
+    <div class="title">
+        <div class="cn">公司理念</div>
+        <div class="en">为大众更快、更及时的了解我公司的信息提供便利</div>
+    </div>
+</div>
+<div class="inpage">
+    <div class="container">
+        <!-- 导航栏 -->
+        <div class="innav" data-spy="affix" data-offset-top="343.5">
+            <ul class="nav nav-tabs">
+                <li><a href="/idea">生产现场</a></li>
+                <li><a href="/case">案例展示</a></li>
+                <li><a href="/news">新闻动态</a></li>
+                <li class="active"><a href="#qiye" data-toggle="tab">企业视频</a></li>
+            </ul>
+        </div>
+        <!-- 内容 -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="qiye">
+                <div class="inmain">
+                    <div class="intitle">
+                        <h1>企业视频</h1>
+                    </div>
+                    <div class="wrapper">
+                    </div>
+                    <div align="center">WD360E3TAD120在客户处调试成功</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/block}} 
+{{block 'script'}} {{/block}}

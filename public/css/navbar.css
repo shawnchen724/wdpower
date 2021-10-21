@@ -1,0 +1,24 @@
+.navbar {
+  margin-bottom: 0;
+}
+.navbar .container {
+  width: 1020px;
+}
+.navbar .container .navbar-header .navbar-brand {
+  padding: 0;
+  line-height: 80px;
+}
+.navbar .container .navbar-header .navbar-brand img {
+  display: inline-block;
+}
+.navbar .container .navbar-collapse.collapse.in .nav li a {
+  line-height: 28px;
+}
+.navbar .container .navbar-collapse.collapse.in .nav li a:hover {
+  color: black;
+}
+@media screen and (max-width: 1020px) {
+  .navbar .container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,112 @@
+{{extend '../common/layout.html'}} 
+{{block 'title'}}
+<title>产品详情3</title>
+{{/block}}
+{{block 'link'}}
+<link rel="stylesheet" href="/css/xkpage.css">
+<link rel="stylesheet" href="/css/xkproduct.css">
+<link rel="stylesheet" href="/css/xknumber.css">
+<link rel="stylesheet" href="/css/xkdetail.css">
+<link rel="stylesheet" href="/css/xkintro1.css">
+{{/block}}
+{{block 'content'}}
+<!-- 标语部分 -->
+<div class="inbanner">
+    <div class="container">
+        <div class="title">
+            <div class="company text-center">产品展示</div>
+            <div class="intro text-center">公司被中国市场调查研究中心评为中国内燃机制造10强企业</div>
+        </div>
+    </div>
+</div>
+<!-- 产品介绍模块 -->
+<section class="intro clearfix">
+    <div class="container">
+        <ul class="nav page-tabs text-center clearfix affix-top" data-spy="affix" data-offset-top="375">
+            <li><a href="/product1">国Ⅲ系列</a></li>
+            <li class="active"><a href="/product2">电站系列</a></li>
+            <li><a href="/product3">通用配套系列</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="home">
+                <div class="title text-center">
+                    <h1>WD系列12缸柴油机</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- 产品详情页 -->
+<section class="detail clearfix">
+    <div>
+        <div class="img-cyj">
+            <img src="/img/20180404145451422.png" alt="">
+        </div>
+        <!-- <p>　　万迪牌非道路国三排放型柴油机符合标准GB20891-2014《非道路移动机械用柴油机排气污染物排放限值及测量方法（中国第三、四阶段）》第三阶段要求，柴油机功率强劲、结构紧凑、维修方便、使用简单，功率范围353～1338kW，可供电站、水泵机组及其他通用配套等领域使用。
+        </p> -->
+        <p></p>
+        <h3>产品特色：</h3>
+        <p>　　· WD系列12缸柴油机是公司在原来12V138柴油机基础上，吸收军工研究所技术、借鉴AVL经验，改进设计开发的一种发电机组用柴油机。<br>
+            　　· 功率从382KW-730KW，具有功率强劲、运行可靠、性价比高等特点，外形安装尺寸与原12V138系列柴油机相同，满足整机的可互换性要求。<br>
+            　　· 关键零部件均选用质量上乘的柴油机零部件供应商，产品品质。<br>
+            　　· 产品完全按照发电机组使用特点进行结构布置，外观合理紧凑，适应性更强，采用标准的SAE NO.0飞轮壳与SAE NO.14飞轮接口匹配输出功率，用户安装便捷。</p>
+        <h3>技术说明：</h3>
+        <p>
+            　　· 在原12V138系列柴油机基础上，借鉴世界知名内燃机研发机构经验，通过CAE仿真分析，全新设计柴油机机体、缸盖、曲轴、连杆等重要零部件。<br>
+            　　· 导入车用概念的柴油机性能开发，满足非道路用柴油机节能环保的新要求。<br>
+            　　· 重新设计冷却及润滑系统，运行可靠性。<br>
+            　　· 采用德国博世燃油喷射技术的P型燃油泵，以及CTT增压器进行配套，在获得良好经济性的同时，严格控制了产品的燃烧压力。<br>
+            　　· 符合现代柴油机人性化的研制要求，优化柴油机的密封性与外观，强化柴油机的工作可靠性和安全性。<br>
+            　　· 供油系统采用电子控制，执行指令快速、准确，柴油机的平稳运行，满足高等级电站配套及机组并车需要，同时提供微调装置，方便用户使用。<br>
+        </p>
+    </div>
+
+    <h3>主要型号技术参数：</h3>
+    <table cellspacing="0" cellpadding="0" class="product-table ke-zeroborder">
+        <tbody>
+            <tr>
+                <th>参数 型号</th>
+                <th>缸径×冲程mm</th>
+                <th>排量 L</th>
+                <th>标定转速r/min</th>
+                <th>标定功率kW</th>
+                <th>功率kW</th>
+                <th>燃油耗率g/kW·h</th>
+                <th>机油 耗率g/kW·h</th>
+                <th>排温 ℃</th>
+                <th>润滑油总容量L</th>
+                <th>冷却液总容量L</th>
+                <th>净重kg</th>
+            </tr>
+            {{each listMsg4}}
+            <tr>
+                <td>{{$value.model}}</td>
+                <td>{{$value.travel}}</td>
+                <td>{{$value.displacement}}</td>
+                <td>{{$value.speed}}</td>
+                <td>{{$value.normKW}}</td>
+                <td>{{$value.KW}}</td>
+                <td>{{$value.fuOil}}</td>
+                <td>{{$value.enOil}}</td>
+                <td>{{$value.temperature}}</td>
+                <td>{{$value.lube}}</td>
+                <td>{{$value.refrigerant}}</td>
+                <td>{{$value.suttle}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</section>
+
+<!-- 底部页码 -->
+<section class="footer-page clearfix">
+    <div><a href="/detail2">◀ 上一篇</a></div>
+    <div>
+        <a href="/detail3">回到顶部</a>
+    </div>
+    <div><a href="/detail4">下一篇 ▶</a></div>
+</section>
+
+{{/block}}
+{{block 'script'}} {{/block}}

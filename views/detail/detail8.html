@@ -1,0 +1,218 @@
+{{extend '../common/layout.html'}} 
+{{block 'title'}}
+<title>产品详情8</title>
+{{/block}}
+{{block 'link'}}
+<link rel="stylesheet" href="/css/xkpage.css">
+<link rel="stylesheet" href="/css/xkproduct.css">
+<link rel="stylesheet" href="/css/xknumber.css">
+<link rel="stylesheet" href="/css/xkdetail.css">
+<link rel="stylesheet" href="/css/xkintro1.css">
+{{/block}}
+{{block 'content'}}
+<!-- 标语部分 -->
+<div class="inbanner">
+    <div class="container">
+        <div class="title">
+            <div class="company text-center">产品展示</div>
+            <div class="intro text-center">公司被中国市场调查研究中心评为中国内燃机制造10强企业</div>
+        </div>
+    </div>
+</div>
+<!-- 产品介绍模块 -->
+<section class="intro clearfix">
+    <div class="container">
+        <ul class="nav page-tabs text-center clearfix affix-top" data-spy="affix" data-offset-top="375">
+            <li><a href="/product1">国Ⅲ系列</a></li>
+            <li><a href="/product2">电站系列</a></li>
+            <li class="active"><a href="/product3">通用配套系列</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="home">
+                <div class="title text-center">
+                    <h1>消防泵水泵用柴油机</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- 产品详情页 -->
+<section class="detail clearfix">
+    <div>
+        <div class="img-cyj">
+            <img src="/img/20180413134150180.jpg" alt="">
+        </div>
+        <h3>消防泵水泵用柴油机</h3>
+        <p>
+            　　万迪牌消防泵水泵用柴油机符合消防标准，柴油机功率强劲、结构紧凑、维修方便、使用简单，功率范围56-1200kW。广泛用于消防、高压清洗、农业灌溉等领域，以技术、可靠性好赢得客户信赖，产品销往全国各地和海外。<br>
+
+            　　全水冷结构，通过水-水热交换器和特殊设计的水-空空气冷却器（增压中冷机型用），实现发动机系统的冷却，设备安装不受空间及地域限制，同时可有效果提升同等发动机效率的7%-10%。直接为用户节约投资成本。<br>
+
+            　　机组一体化设计,用户只需连接进/出水管、排气管即可工作。<br>
+        </p>
+    </div>
+
+    <h3>消防泵水泵用柴油机性能参数</h3>
+    <table cellspacing="0" cellpadding="0" class="product-table ke-zeroborder">
+        <tbody>
+            <tr>
+                <th class="text-center">柴油机型号</th>
+                <th class="text-center">标定功率<br />
+                    (kW)</th>
+                <th class="text-center">超负荷功率<br />
+                    (kW)</th>
+                <th class="text-center">缸径×冲程<br />
+                    (mm)</th>
+                <th class="text-center">气缸排量<br />
+                    (L)</th>
+                <th class="text-center">标定转速<br />
+                    (r/min)</th>
+                <th class="text-center">燃油耗率<br />
+                    (g/kW·h)</th>
+                <th class="text-center">机油耗率<br />
+                    (g/kW·h)</th>
+            </tr>
+            <tr>
+                <td>WD129TAB23</td>
+                <td>235</td>
+                <td>259</td>
+                <td>135×150</td>
+                <td>12.9</td>
+                <td rowspan="6">1500/1800</td>
+                <td>198</td>
+                <td>≤0.67</td>
+            </tr>
+            {{each listMsg9}}
+            <tr>
+                <td>{{$value.model}}</td>
+                <td>{{$value.normKW}}</td>
+                <td>{{$value.KW}}</td>
+                <td>{{$value.travel}}</td>
+                <td>{{$value.displacement}}</td>
+                <td>{{$value.fuOil}}</td>
+                <td>{{$value.enOil}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <table cellspacing="0" cellpadding="0" class="product-table ke-zeroborder">
+        <tbody>
+            <tr>
+                <th class="text-center">柴油机型号</th>
+                <th class="text-center">标定功率<br />
+                    (kW)</th>
+                <th class="text-center">超负荷功率<br />
+                    (kW)</th>
+                <th class="text-center">缸径×冲程<br />
+                    (mm)</th>
+                <th class="text-center">气缸排量<br />
+                    (L)</th>
+                <th class="text-center">标定转速<br />
+                    (r/min)</th>
+                <th class="text-center">燃油耗率<br />
+                    (g/kW·h)</th>
+                <th class="text-center">机油耗率<br />
+                    (g/kW·h)</th>
+            </tr>
+            <tr>
+                <td>WD269TAB38</td>
+                <td>382</td>
+                <td>420</td>
+                <td>138×150</td>
+                <td>26.9</td>
+                <td rowspan="10">1500/1800</td>
+                <td>198</td>
+                <td>≤0.67</td>
+            </tr>
+            {{each listMsg10}}
+            <tr>
+                <td>{{$value.model}}</td>
+                <td>{{$value.normKW}}</td>
+                <td>{{$value.KW}}</td>
+                <td>{{$value.travel}}</td>
+                <td>{{$value.displacement}}</td>
+                <td>{{$value.fuOil}}</td>
+                <td>{{$value.enOil}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <table cellspacing="0" cellpadding="0" class="product-table ke-zeroborder">
+        <tbody>
+            <tr>
+                <th class="text-center">柴油机型号</th>
+                <th class="text-center">标定功率<br />
+                    (kW)</th>
+                <th class="text-center">超负荷功率<br />
+                    (kW)</th>
+                <th class="text-center">缸径×冲程<br />
+                    (mm)</th>
+                <th class="text-center">气缸排量<br />
+                    (L)</th>
+                <th class="text-center">标定转速<br />
+                    (r/min)</th>
+                <th class="text-center">燃油耗率<br />
+                    (g/kW·h)</th>
+                <th class="text-center">机油耗率<br />
+                    (g/kW·h)</th>
+            </tr>
+            <tr>
+                <td>WD164TAB43</td>
+                <td>430</td>
+                <td>473</td>
+                <td>145×165</td>
+                <td>16.4.9</td>
+                <td rowspan="11">1500/1800</td>
+                <td>196</td>
+                <td rowspan="11">≤0.48</td>
+            </tr>
+            {{each listMsg11}}
+            <tr>
+                <td>{{$value.model}}</td>
+                <td>{{$value.normKW}}</td>
+                <td>{{$value.KW}}</td>
+                <td>{{$value.travel}}</td>
+                <td>{{$value.displacement}}</td>
+                <td>{{$value.fuOil}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <h3>部分项目汇总</h3>
+        <p>
+            中国南海工程<br>
+            中海石油<br>
+            陕西榆林煤电<br>
+            鲁西化工<br>
+            西北化工<br>
+            山东石化<br>
+            特种金属材料有限公司<br>
+            中国电建<br>
+            中国能源建设集团<br>
+            河北华北石油<br>
+            辽宁鞍钢<br>
+            上海石化消防工程<br>
+            中油吉林化建工程有限公司<br>
+            济南四建集团<br>
+            西北能源化工<br>
+            兰鑫钢铁<br>
+            南京金陵石化工程<br>
+            首都国际机场<br>
+            浦东国际机场<br>
+            大型房地产企业<br>
+            石油天然气输送管道<br>
+        </p>
+</section>
+
+<!-- 底部页码 -->
+<section class="footer-page clearfix">
+    <div><a href="/detail7">◀ 上一篇</a></div>
+    <div>
+        <a href="/detail8">回到顶部</a>
+    </div>
+    <div>下一篇 ▶</div>
+</section>
+
+{{/block}}
+{{block 'script'}} {{/block}}

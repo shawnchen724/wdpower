@@ -1,0 +1,164 @@
+{{extend '../common/layout.html'}} 
+{{block 'title'}}
+<title>产品详情7</title>
+{{/block}}
+{{block 'link'}}
+<link rel="stylesheet" href="/css/xkpage.css">
+<link rel="stylesheet" href="/css/xkproduct.css">
+<link rel="stylesheet" href="/css/xknumber.css">
+<link rel="stylesheet" href="/css/xkdetail.css">
+<link rel="stylesheet" href="/css/xkintro1.css">
+{{/block}}
+{{block 'content'}}
+<!-- 标语部分 -->
+<div class="inbanner">
+    <div class="container">
+        <div class="title">
+            <div class="company text-center">产品展示</div>
+            <div class="intro text-center">公司被中国市场调查研究中心评为中国内燃机制造10强企业</div>
+        </div>
+    </div>
+</div>
+<!-- 产品介绍模块 -->
+<section class="intro clearfix">
+    <div class="container">
+        <ul class="nav page-tabs text-center clearfix affix-top" data-spy="affix" data-offset-top="375">
+            <li><a href="/product1">国Ⅲ系列</a></li>
+            <li><a href="/product2">电站系列</a></li>
+            <li class="active"><a href="/product3">通用配套系列</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="home">
+                <div class="title text-center">
+                    <h1>水-空中冷型消防泵用双启动柴油机</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- 产品详情页 -->
+<section class="detail clearfix">
+    <div>
+        <div class="img-cyj">
+            <img src="/img/20180419141947177.jpg" alt="">
+        </div>
+        <h3>水-空中冷型消防泵用双启动柴油机</h3>
+        <p>
+            　　·万迪消防泵用双启动柴油机是按照新的强制消防规程研发生产的，得到消防研究所认可。柴油机功率强劲、结构紧凑、维修方便、使用简单。<br><br>
+
+            　　·六缸消防泵用双启动柴油机以碟形弹簧为储能介质的起动机，它仅用人力盘动来压缩弹簧，然后快速向柴油机飞轮释放能量使发动机起动，无能源消耗和排放污染，确保电起动系统故障情况下仍能顺利起动柴油机。<br><br>
+            
+            　　·十二缸消防泵用双启动柴油机以压缩空气为起动能量介质的起动机，它通过满足一定使用要求的压缩空气来驱动起动机，带动飞轮使柴油机起动，确保电起动系统故障情况下仍能顺利起动柴油机。<br><br>
+            
+            　　·全水冷结构，通过水-水热交换器和特殊设计的水-空空气冷却器（增压中冷机型用），实现发动机系统的冷却，设备安装不受空间及地域限制，同时可有效果提升同等发动机效率的7%-10%。直接为用户节约投资成本。<br>
+        </p>
+    </div>
+
+    <h3>空-空中冷型消防泵用双启动柴油机性能参数</h3>
+    <table cellspacing="0" cellpadding="0" class="product-table ke-zeroborder">
+        <tbody>
+            <tr>
+                <th class="text-center">柴油机型号</th>
+                <th class="text-center">标定功率<br />
+                    (kW)</th>
+                <th class="text-center">超负荷功率<br />
+                    (kW)</th>
+                <th class="text-center">进气方式<br />
+                </th>
+                <th class="text-center">缸径×冲程<br />
+                    (mm)</th>
+                <th class="text-center">气缸排量<br />
+                    (L)</th>
+                <th class="text-center">标定转速<br />
+                    (r/min)</th>
+                <th class="text-center">燃油耗率<br />
+                    (g/kW·h)</th>
+                <th class="text-center">机油耗率<br />
+                    (g/kW·h)</th>
+                <th class="text-center">启动方式</th>
+            </tr>
+            <tr>
+                <td>WD129TACB23</td>
+                <td>235</td>
+                <td>259</td>
+                <td rowspan="6">涡轮增压<br />
+                    空-空中冷</td>
+                <td>135×150</td>
+                <td>12.9</td>
+                <td rowspan="6">1500/1800</td>
+                <td rowspan="6">198</td>
+                <td>≤0.9</td>
+                <td rowspan="6">24V电启动、机械启动</td>
+            </tr>
+            {{each listMsg7}}
+            <tr>
+                <td>{{$value.model}}</td>
+                <td>{{$value.normKW}}</td>
+                <td>{{$value.KW}}</td>
+                <td>{{$value.travel}}</td>
+                <td>{{$value.displacement}}</td>
+                <td>{{$value.enOil}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <table cellspacing="0" cellpadding="0" class="product-table ke-zeroborder">
+        <tbody>
+            <tr>
+                <th class="text-center">柴油机型号</th>
+                <th class="text-center">标定功率<br />
+                    (kW)</th>
+                <th class="text-center">超负荷功率<br />
+                    (kW)</th>
+                <th class="text-center">进气方式</th>
+                <th class="text-center">缸径×冲程<br />
+                    (mm)</th>
+                <th class="text-center">气缸排量<br />
+                    (L)</th>
+                <th class="text-center">标定转速<br />
+                    (r/min)</th>
+                <th class="text-center">燃油耗率<br />
+                    (g/kW·h)</th>
+                <th class="text-center">机油耗率<br />
+                    (g/kW·h)</th>
+                <th class="text-center">启动方式</th>
+            </tr>
+            <tr>
+                <td>WD269TACB38</td>
+                <td>382</td>
+                <td>420</td>
+                <td rowspan="9">涡轮增压<br />
+                    空-空中冷</td>
+                <td>138×150</td>
+                <td>26.9</td>
+                <td rowspan="9">1500/1800</td>
+                <td rowspan="9">198</td>
+                <td>≤0.9</td>
+                <td rowspan="9">24V电启动、应急气启动</td>
+            </tr>
+            {{each listMsg8}}
+            <tr>
+                <td>{{$value.model}}</td>
+                <td>{{$value.normKW}}</td>
+                <td>{{$value.KW}}</td>
+                <td>{{$value.travel}}</td>
+                <td>{{$value.displacement}}</td>
+                <td>{{$value.enOil}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</section>
+
+<!-- 底部页码 -->
+<section class="footer-page clearfix">
+    <div><a href="/detail6">◀ 上一篇</a></div>
+    <div>
+        <a href="/detail7">回到顶部</a>
+    </div>
+    <div><a href="/detail8">下一篇 ▶</a></div>
+</section>
+
+{{/block}}
+{{block 'script'}} {{/block}}

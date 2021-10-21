@@ -1,0 +1,53 @@
+{{extend '../common/layout.html'}}
+{{block 'title'}}
+<title>联系我们</title>
+{{/block}}
+{{block 'link'}}
+<link rel="stylesheet" href="/css/xhbanner.css">
+<link rel="stylesheet" href="/css/xhnav.css">
+<link rel="stylesheet" href="/css/xhmain.css">
+{{/block}}
+{{block 'content'}}
+<div class="inbanner">
+    <div class="title">
+        <div class="cn">公司理念</div>
+        <div class="en">为大众更快、更及时的了解我公司的信息提供便利</div>
+    </div>
+</div>
+<div class="inpage">
+    <div class="container">
+        <!-- 导航栏 -->
+        <div class="innav" data-spy="affix" data-offset-top="343.5">
+            <ul class="nav nav-tabs">
+                <li><a href="/need">需求信息</a></li>
+                <li><a href="/talents">人才招聘</a></li>
+                <li class="active"><a href="/contact">联系我们</a></li>
+            </ul>
+        </div>
+        <!-- 内容 -->
+        <div class="tab-pane active" id="xinwen">
+            <div class="inmain">
+                <div class="intitle">
+                    <h1>联系我们</h1>
+                </div>
+                <div class="wrapper">
+                    <p style="text-align:center;color:#ed0e00;font-weight:bold;">无锡动力工程股份有限公司</p>
+                    <p style="text-align:center;">公司总部联系方式：<br />
+                        电话（总机）：0510－81885566<br />
+                        传真：0510－88536805<br />
+                        地址：中国江苏省无锡市锡山经济开发区胶阳路2721号<br />
+                        E-mail: wdpower@wdpower.com</p>
+                    <p style="text-align:center;"><strong style="color:#ed0e00;">柴油机业务</strong><br />
+                        发动机销售：电话：0510-88536507 传真：0510-88536521<br />
+                        配件销售：电话：0510-88536539 0510-88536523 传真：0510-88536523<br />
+                        技术服务：电话：0510-88536520<br />
+                        售后服务：电话：0510-88536538 传真：0510-88536534</p>
+                    <p><img style="max-width: 100%;" src="/img/contact01.jpg" /></p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{{/block}}

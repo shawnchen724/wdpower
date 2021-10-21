@@ -1,0 +1,71 @@
+.stock .container {
+  width: 1020px;
+}
+.stock .container .stocktit {
+  margin: 40px 0;
+}
+.stock .container .stocktit h1 {
+  display: inline-block;
+  color: red;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 60px;
+  border-bottom: 3px solid #ed0e00;
+}
+.stock .container p {
+  text-indent: 2em;
+  font-size: 16px;
+  line-height: 30px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.stock .container p strong {
+  color: red;
+}
+.stock .container .img li {
+  width: 20%;
+  float: left;
+}
+.stock .container .img li img {
+  display: inline-block;
+  max-width: 96%;
+}
+.stock .container .img li p {
+  font-size: 12px;
+  color: #666;
+  text-indent: 0;
+}
+.stock .container .group-conpany .group {
+  margin-top: 0;
+}
+.stock .container .group-conpany .company-contant div {
+  width: 100%;
+}
+.stock .container .group-conpany .company-contant div img {
+  width: 100%;
+}
+@media screen and (max-width: 1020px) {
+  .stock .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .stock .container {
+    width: 100%;
+  }
+  .stock .container .stock .stocktit {
+    margin: 20px 0;
+  }
+  .stock .container .stock .stocktit h1 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .stock .container .img li {
+    width: 50%;
+    float: left;
+  }
+  .stock .container .img li img {
+    display: inline-block;
+    max-width: 96%;
+  }
+}

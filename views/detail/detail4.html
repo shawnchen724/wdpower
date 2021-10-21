@@ -1,0 +1,114 @@
+{{extend '../common/layout.html'}} 
+{{block 'title'}}
+<title>产品详情4</title>
+{{/block}}
+{{block 'link'}}
+<link rel="stylesheet" href="/css/xkpage.css">
+<link rel="stylesheet" href="/css/xkproduct.css">
+<link rel="stylesheet" href="/css/xknumber.css">
+<link rel="stylesheet" href="/css/xkdetail.css">
+<link rel="stylesheet" href="/css/xkintro1.css">
+{{/block}}
+{{block 'content'}}
+<!-- 标语部分 -->
+<div class="inbanner">
+    <div class="container">
+        <div class="title">
+            <div class="company text-center">产品展示</div>
+            <div class="intro text-center">公司被中国市场调查研究中心评为中国内燃机制造10强企业</div>
+        </div>
+    </div>
+</div>
+<!-- 产品介绍模块 -->
+<section class="intro clearfix">
+    <div class="container">
+        <ul class="nav page-tabs text-center clearfix affix-top" data-spy="affix" data-offset-top="375">
+            <li><a href="/product1">国Ⅲ系列</a></li>
+            <li class="active"><a href="/product2">电站系列</a></li>
+            <li><a href="/product3">通用配套系列</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="home">
+                <div class="title text-center">
+                    <h1>蓝迪系列柴油机</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- 产品详情页 -->
+<section class="detail clearfix">
+    <div>
+        <div class="img-cyj">
+            <img src="/img/20180403150038505.png" alt="">
+        </div>
+        <div class="img-cyj">
+            <img src="/img/20180403150047833.png" alt="">
+        </div>
+        <h3>产品特色：</h3>
+        <p>
+            　　· 蓝迪系列柴油机是公司根据市场需求新研发的产品。该产品吸收军工技术、并经AVL技术咨询，是产学研合作的结晶，在同类产品中具有高的功率密度，可作为发电、泵类及通用机械的配套动力。<br>
+            　　· 功率从430KW-1200KW，具有功率强劲、运行可靠、性价比高等特点，属于江苏省重大科技成果转化项目。<br>
+            　　· 高压油泵、增压器、水泵、机油泵、喷油器、机油冷却器、气缸盖、活塞、气缸套等关键零部件均选用质量上乘的零部件供应商合作，了产品品质。<br>
+            　　· 产品完全按照发电机组使用特点进行结构布置，外观合理紧凑，适应性更强，采用标准的SAE NO.0飞轮壳与SAE NO.14、18双接口飞轮匹配输出功率，用户安装便捷。<br>
+        </p>
+        <h3>技术说明：</h3>
+        <p>
+            　　· 采用预测设计手段，利用专业模拟分析软件Boost、Fire、Excite等，模拟实际使用状态，对柴油机性能、可靠性进行全面分析。<br>
+            　　· 机体采用高强度合金铸铁，高负荷下的刚度、强度，优化机体结构，减小局部区域高应力、微蠕动。<br>
+            　　· 气缸套采用特种高强度耐磨合金铸铁，显著提高抗拉强度及硬度，在减小壁厚增加冷却的同时了强度，内孔珩磨，优质平台网纹。<br>
+            　　· 活塞采用高强度铝合金，加大内部振荡冷却油腔，并加大活塞冷却喷油量，强化冷却，提高活塞及环组运动可靠性；燃烧室采用降排放方案，优化与燃油系统及气流的匹配，提高燃烧效率并降低有害废气排放。<br>
+            　　· 采用大流量机油泵，提升柴油机润滑、冷却能力；配置调压装置，实现全过程机油压力的稳定。<br>
+            　　· 供油系统采用数字式控制，执行指令快速、准确，可按柴油机不同的运行工况控制燃油供给量，柴油机的平稳运行，满足高等级电站配套及机组并车需要，同时提供微调装置，方便用户使用。<br>
+            　　· 采用高压比大流量增压器，提高柴油机的功率密度。压气机叶轮采用锻造铝合金毛坯、五轴数控机械加工叶轮，高压比、高效率下的运转可靠性。<br>
+            　　· 具有降排放技术措施，机内净化加排气后处理设备，可满足非道路排放TierⅢ及更高要求。<br>
+        </p>
+    </div>
+
+    <h3>主要型号技术参数：</h3>
+    <table cellspacing="0" cellpadding="0" class="product-table ke-zeroborder">
+        <tbody>
+            <tr>
+                <th>参数 型号</th>
+                <th>缸径×冲程mm</th>
+                <th>排量 L</th>
+                <th>标定转速r/min</th>
+                <th>标定功率kW</th>
+                <th>燃油耗率g/kW·h</th>
+                <th>机油 耗率g/kW·h</th>
+                <th>排温 ℃</th>
+                <th>润滑油总容量L</th>
+                <th>冷却液总容量L</th>
+                <th>净重kg</th>
+            </tr>
+            {{each listMsg5}}
+            <tr>
+                <td>{{$value.model}}</td>
+                <td>{{$value.travel}}</td>
+                <td>{{$value.displacement}}</td>
+                <td>{{$value.speed}}</td>
+                <td>{{$value.normKW}}</td>
+                <td>{{$value.fuOil}}</td>
+                <td>{{$value.enOil}}</td>
+                <td>{{$value.temperature}}</td>
+                <td>{{$value.lube}}</td>
+                <td>{{$value.refrigerant}}</td>
+                <td>{{$value.suttle}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</section>
+
+<!-- 底部页码 -->
+<section class="footer-page clearfix">
+    <div><a href="/detail3">◀ 上一篇</a></div>
+    <div>
+        <a href="/detail4">回到顶部</a>
+    </div>
+    <div><a href="/detail5">下一篇 ▶</a></div>
+</section>
+
+{{/block}}
+{{block 'script'}} {{/block}}

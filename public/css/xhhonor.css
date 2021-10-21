@@ -1,0 +1,78 @@
+.honor .honor-title h1 {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 60px;
+  border-bottom: 3px solid #ed0e00;
+  font-weight: 700;
+  color: red;
+}
+.honor .honor-img ul li {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.honor .honor-img ul li a {
+  display: block;
+}
+.honor .honor-img ul li a img {
+  width: 95%;
+}
+.honor .honor-img ul li p {
+  line-height: 24px;
+  font-size: 14px;
+  height: 24px;
+  overflow: hidden;
+}
+.mask {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #575454;
+  z-index: 10000;
+  opacity: 0.6;
+}
+.lb {
+  display: none;
+  position: absolute;
+  z-index: 99999;
+}
+.lb .lb-contain {
+  position: relative;
+}
+.lb .lb-contain img {
+  display: block;
+}
+.lb .lb-contain .lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.lb .lb-contain .lb-nav .lb-prev {
+  display: block;
+  float: left;
+  width: 30%;
+  height: 100%;
+  background: url('/img/prev.png') no-repeat center left;
+  opacity: 0;
+}
+.lb .lb-contain .lb-nav .lb-next {
+  display: block;
+  float: right;
+  width: 70%;
+  height: 100%;
+  background: url('/img/next.png') no-repeat center right;
+  opacity: 0;
+}
+.lb .lb-remove {
+  height: 50px;
+}
+.lb .lb-remove span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url('/img/close.png') no-repeat center;
+}

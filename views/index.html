@@ -1,0 +1,215 @@
+{{extend './common/layout.html'}}
+{{block 'link'}}
+    <link rel="stylesheet" href="/css/six.css" />
+    <link rel="stylesheet" href="/css/cp.css" />
+    <link rel="stylesheet" href="/css/qysp.css" />
+    <link rel="stylesheet" href="/css/xwdt.css" />
+    <link rel="stylesheet" href="/css/xyy.css" /> 
+    <link rel="stylesheet" href="/css/swiper.min.css">       
+{{/block}}
+    {{block 'style'}}
+    <style>
+      html, body {
+          position: relative;
+          height: 100%;
+      }
+      body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color:#000;
+          margin: 0;
+          padding: 0;
+      }
+      .swiper-container {
+          width: 100%;
+          /* height: 100%; */
+          
+      }
+      .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+      }
+      </style>
+      {{/block}}
+</head>
+{{include './common/header.html'}}
+{{block 'content'}}
+      <!-- 轮播图 -->
+      <script src="/js/swiper.min.js"></script>
+      <div class="swiper-container lbt" style="margin-top:-20px;">
+        <div class="swiper-wrapper lbt1">
+            <div class="swiper-slide"><img src="img/banner01.jpg"></div>
+            <div class="swiper-slide"><img src="img/banner02.jpg"></div>
+            <div class="swiper-slide"><img src="img/banner03.jpg"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false,
+        loop:true
+    });
+    </script>
+      <!-- 中部六组件 -->
+      <div class="homebox "><div class="wrapper">
+        <div class="sixtitle">
+          <div class="one">COMPANY</div>
+          <div class="two">无锡动力工程股份有限公司简介</div>
+          <div class="three">万迪集团由主体企业无锡动力工程股份有限公司和中外合资无锡范尼韦尔工程有限公司组成。</div>
+        </div>
+        <div class="sixboxs ">
+          <div class="item  col-sm-6">
+            <div class="bgs" style="background-image:url(img/hb01item05.jpg);"></div>
+            <div class="tit">公司简介</div>
+            <div class="txt">　　无锡万迪动力集团有限公司是研制生产内燃机、涡轮增压器、柴油发电机组及其零部件的大型骨干企业，江苏省高新技术企业和中国机械500强企业，前身为成立于1956年的公私合营无锡动力机厂。</div>
+            <div class="btn"><a href="#">查看详情 ></a></div>
+          </div>
+          <div class="item col-md-4 col-sm-6">
+            <div class="bgs"style="background-image:url(img/hb01item02.jpg);"></div>
+            <div class="tit tit02">资质认证</div>
+            <div class="txt">　　公司1995年6月在行业中首批取得GB/T19001 idt ISO9001（94版）质量体系认证证书，2009年又通过了ISO9001：2008质量认证。2004年和2007年增压器零部件先后通过法国BVQI和英国劳氏的ISO…</div>
+            <div class="btn btn02"><a href="#">查看详情 ></a></div>
+          </div>
+          <div class="item col-md-4 col-sm-6">
+            <div class="bgs"style="background-image:url(img/hb01item03.jpg);"></div>
+            <div class="tit tit02">生产现场</div>
+            <a href="#" class="link"></a>
+          </div>
+          <div class="item col-md-4 col-sm-6">
+            <div class="bgs" style="background-image:url(img/hb01item04.jpg);"></div>
+            <div class="tit tit02" style="width:166px;">质量、HSE 方针</div>
+            <div class="txt">　　 以“满足顾客需求，超越顾客期望”为宗旨，以符合法律法规和相关方要求为前提，注重技术与管理创新，减少资源耗用及对环境的负面影响，重视员工职业健康安全，营造适宜的工作环境…</div>
+            <div class="btn btn02"><a href="#">查看详情 ></a></div>
+          </div>
+          <div class="item col-md-4 col-sm-6">
+            <div class="bgs" style="background-image:url(img/hb01item06.jpg);"></div>
+            <div class="tit tit02">案例展示</div>
+            <a href="#" class="link"></a>
+          </div>
+          <div class="item col-md-4 col-sm-6">
+            <div class="bgs" style="background-image:url(img/hb01item07.jpg);"></div>
+            <div class="tit tit02">企业文化</div>
+            <div class="txt">　　 公司紧紧抓住国家重要战略机遇期，以持续发展为主题，以结构调整为主线，以技术、管理、机制创新为动力，增创可比优势，增强竞争能力，推进现代化企业建设。继续团结拼搏，开拓创新…</div>
+            <div class="btn btn02"><a href="#">查看详情 ></a></div>
+          </div>
+        </div>
+      </div></div>
+      <!-- 我们的产品 --> 
+      <div class="homebox homebox02"><div class="wrapper">
+        <div class="xlml">
+          <div class="one">PRODUCT</div>
+          <div class="two">我们的产品</div>
+          <div class="three">无锡万迪动力集团有限公司是研制生产内燃机、涡轮增压器、柴油发电机组及其零部件的大型骨干企业。<br/>公司被中国市场调查研究中心评为中国内燃机制造10强企业。</div>
+        </div>
+        <div class="cpml">
+          <div class="tit"><span>/</span>产品目录</div>
+        </div>
+        <div class="xxml row">
+          {{each  result}}
+          <div class="item it1 col-xs-3" style=" background: #fff url({{$value.back}}) no-repeat center top;">
+            <div class="img"><a href="{{$value.href}}"><img src="{{$value.img}}"></a></div>
+            <div class="info">
+              <div class="nam" style="margin-bottom:12px;">{{$value.title}}</div>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+      </div></div>
+      <!-- 企业视频 -->
+      <div class="homebox homebox03 qysp"><div class="wrapper">
+        <div class="qyname">企业视频</div>
+        <div class="hbtitle">
+          <div class="one">CREATE A BETTER MARKET</div>
+          <div class="two">精艺求生存 质量创市场</div>
+        </div>
+        <div class="hb03video"><a href="#"><img src="img/hb03video.png"/></a></div>
+      </div></div>
+      <!-- 新闻动态 -->
+      <div class="homebox"><div class="wrapper">
+        <div class="hbtitle">
+          <div class="one">NEWS & NOTICES</div>
+          <div class="two">公司新闻与相关动态</div>
+          <div class="three">以质量体系为行动指南，以顾客为关注焦点，确保顾客的期望与需求被正确的理解并充分满足。<br/>并向社会提供含图文音、视频的综合新闻资讯、行业资讯等信息，<br/>为大众更快、更及时的了解我公司的信息提供便利。</div>
+        </div>
+        <div class="hb04box">
+          <div class="newslist">
+            
+            <div class="item">
+              <div class="img"><a href="#"><img src="img/20210715150831801.jpg"></a></div>
+              <div class="tit"><a href="#">万迪动力集团举行庆祝建党100周年暨创…</a></div>
+              <div class="tim">发布时间：2021-07-15</div>
+              <div class="txt">
+    2021年7月1日，万迪动力集团庆祝建党100周年暨创先争优表彰大会伴随着庄严的国歌声，在会议厅隆重开幕。集团全体党员共计60余人参加大会。
+    集团公司党委书记郑…</div>
+              <div class="btn"><a href="#"><img src="img/hb04btn01.jpg"/></a></div>
+            </div>
+        
+            <div class="item">
+              <div class="img"><a href="#"><img src="img/20200820110707712.jpg"></a></div>
+              <div class="tit"><a href="#">酷暑慰问鼓人心、努力再创“产销双丰…</a></div>
+              <div class="tim">发布时间：2020-08-20</div>
+              <div class="txt">      近期，无锡持续晴热高温，天气进入“烧烤”模式，但我公司一线员工不畏高温，为了保质保量完成生产任务、满足销售市场需求，仍一如既往地坚守在自己的工作…</div>
+              <div class="btn"><a href="#"><img src="img/hb04btn01.jpg"/></a></div>
+            </div>
+         
+          </div>
+          <div class="info">
+            <div class="qrcode">
+              <div class="img"><img src="img/qrcode.jpg"/></div>
+              <div class="txt">扫描二维码关注<br/>我们的相关信息</div>
+            </div>
+             
+            <div class="tout">
+              <div class="tit"><a href="#">无锡动力2018年供应商大会成功召开</a></div>
+              <div class="tim">发布时间：2018-09-27</div>
+              <div class="txt">　　9月14日，无锡动力工程股份有限公司2018年供应商大会在公司报告厅召开，共邀请近70家供应商、100多位供应商嘉宾前来参加。会议由公司总经理陆国平主持。
+       公司…</div>
+            </div>
+             
+            <ul class="nlist">
+             
+              <li><a href="#">万迪动力集团举行庆祝建党100周年暨创…</a></li>
+             
+              <li><a href="#">酷暑慰问鼓人心、努力再创“产销双丰…</a></li>
+             
+              <li><a href="#">无锡动力首台16V柴油机样机成功点火</a></li>
+             
+              <li><a href="#">公示</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div></div>
+     
+      {{/block}}
+      {{include './common/foot.html'}}
+</html>

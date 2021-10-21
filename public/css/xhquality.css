@@ -1,0 +1,33 @@
+.intro .container .quality-page .quality-title {
+  margin: 20px 0;
+}
+.intro .container .quality-page .quality-title h1 {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 60px;
+  border-bottom: 3px solid #ed0e00;
+  font-weight: 700;
+  color: red;
+}
+.intro .container .quality-page .quality-content {
+  padding: 0 10px;
+}
+.intro .container .quality-page .quality-content p {
+  line-height: 30px;
+  font-size: 16px;
+}
+.intro .container .quality-page .quality-content p strong {
+  color: red;
+}
+.intro .container .quality-page .quality-content .img img {
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .intro .container .quality-page .quality-title {
+    margin: 10px 0;
+  }
+  .intro .container .quality-page .quality-title h1 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}

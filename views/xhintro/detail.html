@@ -1,0 +1,78 @@
+{{extend '../common/layout.html'}}
+{{block 'link'}}
+<link rel="stylesheet" href="/css/xhintro.css">
+<link rel="stylesheet" href="/css/xhpage.css">
+<link rel="stylesheet" href="/css/xhdetail.css">
+<link rel="stylesheet" href="/css/xhstock.css">
+{{/block}}
+
+{{block 'content'}}
+<!-- 标语部分 -->
+<div class="inbanner">
+    <div class="container">
+        <div class="title">
+            <div class="company text-center">公司介绍</div>
+            <div class="intro text-center">研制生产内燃机、涡轮增压器、柴油发电机组及其零部件的大型骨干企业</div>
+        </div>
+    </div>
+</div>
+<!-- 详情部分 -->
+<section class="intro clearfix stock">
+    <div class="container">
+        <ul class="nav page-tabs text-center clearfix" data-spy="affix" data-offset-top="260">
+            <li class="active"><a href="/intro">公司简介</a></li>
+            <li><a href="/honor">资质认证</a></li>
+            <li><a href="/policy">HSE方针</a></li>
+            <li><a href="/quality">质量方针</a></li>
+            <li><a href="/culture">企业文化</a></li>
+        </ul>
+        <div class="detail-page">
+            <div class="detail-title text-center">
+                <h1>{{content.title}}</h1>
+            </div>
+            <div class="detail-content stock-company">
+                {{each content.content}}
+                <p class="one">{{$value}}</p>
+                {{/each}}
+                {{if content.num==5}}
+                <ul class="img list-unstyled clearfix">
+                    <li class=" text-center">
+                        <img src="img/aboutimg01.jpg" alt="">
+                        <p>无锡动力工程股份有限公司</p>
+                    </li>
+                    <li class=" text-center">
+                        <img src="img/aboutimg02.jpg" alt="">
+                        <p>无锡万迪精密机械有限公司</p>
+                    </li>
+                    <li class=" text-center">
+                        <img src="img/aboutimg03.jpg" alt="">
+                        <p>无锡华友发电设备有限公司</p>
+                    </li>
+                    <li class=" text-center">
+                        <img src="img/aboutimg04.jpg" alt="">
+                        <p>无锡康明新涡轮增压技术有限公司</p>
+                    </li>
+                    <li class=" text-center">
+                        <img src="img/aboutimg05.jpg" alt="">
+                        <p>无锡范尼韦尔工程有限公司</p>
+                    </li>
+                </ul>
+                {{/if}}
+                {{each content.img}}
+                <p class="two text-center">
+                    <img src="{{$value}}" alt="">
+                </p>
+                {{/each}}
+                <p class="four text-center">
+                    {{content.footer}}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{{/block}}
+
+
+{{block 'script'}}
+<script src="/js/xhindex.js"></script>
+{{/block}}

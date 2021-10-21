@@ -1,0 +1,57 @@
+{{extend '../common/layout.html'}}
+{{block 'title'}}
+<title>需求信息</title>
+{{/block}}
+{{block 'link'}}
+<link rel="stylesheet" href="/css/xhbanner.css">
+<link rel="stylesheet" href="/css/xhnav.css">
+<link rel="stylesheet" href="/css/xhmain.css">
+{{/block}}
+{{block 'content'}}
+<div class="inbanner">
+    <div class="title">
+        <div class="cn">公司理念</div>
+        <div class="en">为大众更快、更及时的了解我公司的信息提供便利</div>
+    </div>
+</div>
+<div class="inpage">
+    <div class="container">
+        <!-- 导航栏 -->
+        <div class="innav" data-spy="affix" data-offset-top="343.5">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="/need">需求信息</a></li>
+                <li><a href="/talents">人才招聘</a></li>
+                <li><a href="/contact">联系我们</a></li>
+            </ul>
+        </div>
+        <!-- 内容 -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="shengchan">
+                <div class="inmain">
+                    <div class="intitle">
+                        <h1>需求信息</h1>
+                    </div>
+                    <div class="wrapper" style=" padding-bottom:15px;border-bottom:1px solid #666">
+                        <div>
+                            <a href="#" style="color: #023589; font-size: 20px;">发动机用铸件类（HT、QT）中小零件供应商</a>
+                        </div>
+                        <div style="font-size: 14px; color: #666; line-height: 24px;">
+                            基本要求：适应多品种、小批量、高质量需求，同时具备粘土砂及树脂砂工艺优先。 联系人：周建军 联系方式…</div>
+
+                    </div>
+                    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td height="60" align="center">
+                                共<span>1</span>条记录 当前第<span>1</span>/1页次 转至第 <select
+                                    onchange='javascript:window.location.href=this.options[this.selectedIndex].value'>
+                                    <option selected='selected' value='?page=1'>1</option>
+                                </select> 页
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/block}}

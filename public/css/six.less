@@ -1,0 +1,101 @@
+.wrapper {
+	width: 1020px;
+	margin: 0 auto; 
+}
+.homebox { padding: 66px 0; }
+.sixtitle {
+	text-align: center; 
+	margin-bottom: 40px; 
+    .one { 
+        font-size: 14px; 
+        color: #333; 
+        font-weight: bold; 
+    }
+    .two { 
+        font-size: 24px; 
+        color: #333; 
+        font-weight: bold; 
+        line-height: 200%; 
+        margin-bottom: 6px; 
+    }
+    .three { 
+        font-size: 12px; 
+        color: #666; 
+        line-height: 20px; 
+    }
+}
+.sixboxs { 
+	overflow: hidden; 
+    .item { 
+        width: 33.333333%; 
+        float: left; background: #ed0e00; 
+        color: #fff; 
+        box-sizing: border-box; 
+        padding: 30px; height: 320px; 
+        position: relative; 
+        overflow: hidden; 
+        .bgs { 
+            background-size: cover; 
+            position: absolute; 
+            left: 0; 
+            top: 0; 
+            right: 0; 
+            bottom: 0; 
+            z-index: 0; 
+            transition: all .2s; 
+            transition: all .2s;
+            
+        }
+        &:hover .bgs { 
+            transform: scale(1.1); 
+        }
+        .tit { 
+            line-height: 36px; 
+            font-size: 16px; 
+            font-weight: bold; 
+            margin-bottom: 20px; 
+            margin-top: 20px; 
+            position: relative; 
+            z-index: 1; 
+            border: 2px solid transparent; 
+            .tit02 { 
+               border: solid 2px white !important;
+                width: 110px; 
+                text-align: center; 
+            }
+        }
+        .txt { 
+            line-height: 20px; 
+            font-size: 12px; 
+            height: 80px; 
+            overflow: hidden; 
+            margin-bottom: 40px; 
+            position: relative;
+            z-index: 1; 
+        }
+        .btn { 
+            position: relative; 
+            z-index: 1; 
+            a { 
+                width: 80px; 
+                line-height: 24px; 
+                background: #333; 
+                font-size: 12px; 
+                color: #fff; 
+                display: block; 
+                text-align: center; 
+                font-family: simsun; 
+                border: 1px solid transparent; 
+                transition: all .2s; 
+                transition: all .2s; 
+                &:hover { 
+                    border-color: #fff; 
+                    background: transparent; 
+                }
+            }
+            .btn02 a { 
+                background: #ed0e00; 
+            }
+        }
+    }
+}

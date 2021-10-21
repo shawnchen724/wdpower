@@ -1,0 +1,35 @@
+.inbanner {
+  height: 260px;
+  position: relative;
+  background-image: url('/img/inbanner01.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.inbanner .container .title {
+  width: 100%;
+  position: absolute;
+  color: #fff;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.inbanner .container .title .company {
+  font-size: 40px;
+  font-weight: normal;
+}
+.inbanner .container .title .intro {
+  width: 100%;
+  font-size: 14px;
+}
+@media screen and (max-width: 800px) {
+  .inbanner {
+    height: 160px;
+  }
+  .inbanner .container .title .company {
+    font-size: 30px;
+    font-weight: normal;
+  }
+  .inbanner .container .title .intro {
+    font-size: 12px;
+  }
+}

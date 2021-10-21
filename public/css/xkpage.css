@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.intro .container {
+  position: relative;
+  width: 1020px;
+  line-height: 65px;
+  background-color: #fff;
+  z-index: 100;
+  padding-left: 0;
+  padding-right: 0;
+}
+.intro .container ul.page-tabs.affix {
+  top: 32.5px;
+  z-index: 999;
+}
+.intro .container .page-tabs {
+  border-bottom: none;
+  width: 1020px;
+  margin-top: -32px;
+  box-shadow: 3px 3px 5px #d8d8d8;
+  background-color: #fff;
+}
+.intro .container .page-tabs li {
+  height: 100% !important;
+  width: 30%;
+}
+.intro .container .page-tabs li:last-child {
+  width: 40%;
+}
+.intro .container .page-tabs li a {
+  display: block;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  color: #666;
+}
+.intro .container .tab-content {
+  margin-top: 30px;
+  padding-left: 10px;
+}
+.intro .container .tab-content .title h1 {
+  display: inline-block;
+  color: red;
+  border-bottom: 3px solid red;
+  font-size: 30px;
+  line-height: 60px;
+  font-weight: 700;
+}
+.intro .container .tab-content .time {
+  width: 100%;
+}
+.intro .container .tab-content .time .item {
+  width: 100%;
+}
+.intro .container .tab-content .time .item .year {
+  position: relative;
+  float: left;
+  width: 220px;
+  font-size: 40px;
+  color: red;
+  font-weight: 700;
+}
+.intro .container .tab-content .time .item .year::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  right: -6px;
+  top: 50%;
+  margin-top: -5px;
+}
+.intro .container .tab-content .time .item .thing {
+  overflow: hidden;
+  padding-left: 20px;
+  border-left: solid 2px #ccc;
+}
+.intro .container .tab-content .time .item .thing .tit {
+  padding-top: 18px;
+  line-height: 30px;
+}
+.intro .container .tab-content .time .item .thing .tit a {
+  color: red;
+  font-size: 20px;
+}
+.intro .container .tab-content .time .item .thing .tit a:focus {
+  text-decoration: none;
+}
+.intro .container .tab-content .time .item .thing .tit a:hover {
+  text-decoration: none;
+}
+.intro .container .tab-content .time .item .thing .con {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #666;
+}
+.intro .container .tab-content .time .item .thing .con a:focus {
+  text-decoration: none;
+}
+.intro .container .tab-content .time .item .thing .con a:hover {
+  text-decoration: none;
+}
+.intro .container .page-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.intro .container .page-tabs > li > a {
+  border-radius: 4px 4px 0 0;
+  padding: 0 15px;
+  border-bottom: solid 2px rgba(100, 100, 100, 0);
+}
+.intro .container .page-tabs > li > a:hover {
+  background-color: #fff;
+  border-bottom: solid 2px red;
+  color: red;
+}
+.intro .container .page-tabs > li.active > a {
+  color: red !important;
+}
+.intro .container .page-tabs > li.active > a,
+.intro .container .page-tabs > li.active > a:hover,
+.intro .container .page-tabs > li.active > a:focus {
+  color: #555555;
+  cursor: default;
+  background-color: #fff;
+  border-bottom: solid 2px red;
+}
+.intro .container .page-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.intro .container .page-tabs.nav-justified > li {
+  float: none;
+}
+.intro .container .page-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.intro .container .page-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .intro .container .page-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .intro .container .page-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.intro .container .page-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.intro .container .page-tabs.nav-justified > .active > a,
+.intro .container .page-tabs.nav-justified > .active > a:hover,
+.intro .container .page-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .intro .container .page-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .intro .container .page-tabs.nav-justified > .active > a,
+  .intro .container .page-tabs.nav-justified > .active > a:hover,
+  .intro .container .page-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .intro .container {
+    width: 100%;
+  }
+  .intro .container .page-tabs {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .intro .container {
+    width: 100%;
+  }
+  .intro .container ul.page-tabs.affix {
+    top: 30px;
+  }
+  .intro .container .page-tabs {
+    border-bottom: none;
+    line-height: 45px;
+  }
+  .intro .container .page-tabs li {
+    height: 100% !important;
+    width: 30%;
+  }
+  .intro .container .page-tabs li:last-child {
+    width: 40%;
+  }
+  .intro .container .page-tabs li a {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,113 @@
+.xlml {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.xlml .one {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+.xlml .two {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  line-height: 200%;
+  margin-bottom: 6px;
+}
+.xlml .three {
+  font-size: 12px;
+  color: #666;
+  line-height: 20px;
+}
+.xxml {
+  overflow: hidden;
+}
+/* .xxml .it1 {
+  background: #fff url(../images/hb02listbg01.jpg) no-repeat center top;
+}
+.xxml .it2 {
+  background: #fff url(../images/hb02listbg02.jpg) no-repeat center top;
+}
+.xxml .it3 {
+  background: #fff url(../images/hb02listbg03.jpg) no-repeat center top;
+} */
+.xxml .item {
+  width: 32.333333%;
+  float: left;
+  margin-right: 1.5%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #a6a6a6;
+  border-right: 1px solid #c7c7c7;
+  background-size: 100% auto;
+  padding: 0 30px 30px;
+}
+.xxml .item:last-child {
+  margin-right: 0;
+}
+.xxml .item .img {
+  padding: 20px 20px 0;
+  transition: all 0.2s;
+}
+.xxml .item .img:hover {
+  transform: scale(1.1);
+}
+.xxml .item .img img {
+  display: block;
+  width: 100%;
+}
+.xxml .item .info {
+  text-align: center;
+}
+.xxml .item .info .nam {
+  font-size: 15px;
+  color: #ed0e00;
+  font-family: Pmingliu;
+  font-weight: bold;
+}
+.xxml .item .info .btn {
+  line-height: 22px;
+  margin: 12px 0;
+}
+.xxml .item .info .btn a {
+  display: inline-block;
+  border: 1px solid #333;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #666;
+  margin: 0 4px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.xxml .item .info .btn a:hover {
+  border-color: #ed0e00;
+  background: #ed0e00;
+  color: #fff;
+}
+.xxml .item .info .txt {
+  color: #666;
+  font-size: 12px;
+  line-height: 20px;
+  height: 60px;
+  overflow: hidden;
+}
+.cpml {
+  border: 10px solid #e4ebed;
+  background: #fff;
+  padding: 30px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.cpml .tit {
+  float: left;
+  line-height: 40px;
+  color: #666;
+  font-family: Pmingliu;
+  font-size: 30px;
+  padding-left: 28px;
+}
+.cpml .tit span {
+  color: red;
+}
+.homebox02 {
+  background: #f1f4f5;
+}

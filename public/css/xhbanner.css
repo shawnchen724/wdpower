@@ -1,0 +1,23 @@
+.inbanner {
+  height: 260px;
+  width: 100%;
+  display: table;
+  background: url(/img/inbanner01.jpg) no-repeat center !important;
+  background-size: cover;
+}
+.inbanner .title {
+  padding-bottom: 32.5px;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  display: table-cell;
+}
+.inbanner .title .cn {
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 80px;
+}
+.inbanner .title .en {
+  font-size: 14px;
+  line-height: 24px;
+}

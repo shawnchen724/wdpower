@@ -1,0 +1,56 @@
+{{extend '../views/common/layout.html'}}
+{{block 'title'}}
+<title>产品分页1</title>
+{{/block}}
+{{block 'link'}}
+<link rel="stylesheet" href="/css/xkintro1.css">
+<link rel="stylesheet" href="/css/xkpage.css">
+<link rel="stylesheet" href="/css/xkproduct.css">
+<link rel="stylesheet" href="/css/xknumber.css">
+{{/block}}
+{{block 'content'}}
+<div class="inbanner">
+    <div class="container">
+        <div class="title">
+            <div class="company text-center">产品展示</div>
+            <div class="intro text-center">公司被中国市场调查研究中心评为中国内燃机制造10强企业</div>
+        </div>
+    </div>
+</div>
+<!-- 产品介绍模块 -->
+<section class="intro clearfix">
+    <div class="container">
+        <ul class="nav page-tabs text-center clearfix affix-top" data-spy="affix" data-offset-top="375">
+            <li class="active"><a href="/product1">国Ⅲ系列</a></li>
+            <li><a href="./product2">电站系列</a></li>
+            <li><a href="./product3">通用配套系列</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="home">
+                <div class="title text-center">
+                    <h1>国Ⅲ系列</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row prolist">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                <a href="/detail">
+                    <div class="img">
+                        <img src="/img/20180413091001823.jpg" alt="">
+                        <div class="nam">WD国三系列柴油机</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="number text-center">
+            <span>«</span>
+            <span>‹</span>
+            <span>1</span>
+            <span>›</span>
+            <span>»</span>
+        </div>
+    </div>
+
+</section>
+{{/block}}
+{{block 'script'}} {{/block}}

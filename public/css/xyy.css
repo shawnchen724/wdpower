@@ -1,0 +1,92 @@
+.lbt1 img {
+  width: 103%;
+  height: 900px;
+}
+@media screen and (max-width: 1020px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .homebox {
+    padding: 30px 0;
+  }
+  .lbt1 img {
+    width: 100%;
+    height: 334px;
+  }
+  .sixboxs .item {
+    width: 50%;
+    padding: 10px 20px;
+    margin-top: 0;
+    height: 260px;
+  }
+  .sixboxs .item .tit {
+    font-size: 14px;
+    text-align: center;
+  }
+  .sixboxs .item .tit .tit02 {
+    width: 100%;
+  }
+  .sixboxs .item .txt {
+    margin-bottom: 20px;
+  }
+  .sixboxs .item .btn a {
+    margin: 0 auto;
+  }
+  .sixtitle {
+    margin-bottom: 20px;
+  }
+  .sixtitle .one {
+    font-size: 12px;
+  }
+  .sixtitle .two {
+    font-size: 18px;
+  }
+  .xlml {
+    margin-bottom: 20px;
+  }
+  .xlml .one {
+    font-size: 12px;
+  }
+  .xlml .two {
+    font-size: 18px;
+  }
+  .hbtitle {
+    margin-bottom: 20px;
+  }
+  .hbtitle .one {
+    font-size: 12px;
+  }
+  .hbtitle .two {
+    font-size: 18px;
+  }
+  .cpml {
+    padding: 20px;
+  }
+  .cpml .tit {
+    float: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .xxml .item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .hb04box .newslist {
+    float: none;
+    width: 100%;
+  }
+  .hb04box .newslist .item {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .hb04box .info {
+    float: none;
+    width: 100%;
+  }
+}

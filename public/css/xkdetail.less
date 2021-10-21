@@ -1,0 +1,160 @@
+body{
+    .inbanner{
+        background-image: url('/img/inbanner01.jpg');
+    }
+}
+.detail {
+    width: 1020px;
+    margin: 0 auto;
+
+    .img-cyj {
+        width: 100%;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and(max-width:1020px) {
+        width: 100%;
+    }
+
+    @media screen and(max-width:600px) {
+        .img-cyj img {
+            width: 100%;
+        }
+    }
+
+    p {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 30px;
+        color: #333;
+    }
+
+    h3 {
+        font-size: 18px;
+        color: #ed0e00;
+        margin-bottom: 20px;
+        position: relative;
+        padding-left: 10px;
+        font-weight: 700;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: #ed0e00;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -2px;
+        }
+    }
+
+    .product-table {
+        width: 100%;
+        margin-bottom: 20px;
+        border-collapse: collapse;
+
+        th {
+            font-size: 12px;
+            line-height: 20px;
+            padding: 5px 10px;
+            color: #fff;
+            border: 1px solid #dedede;
+            background: #ed0e00;
+        }
+
+        td {
+            font-size: 12px;
+            line-height: 20px;
+            padding: 5px 10px;
+            color: #333;
+            border: 1px solid #dedede;
+            text-align: center;
+        }
+
+        tr:nth-child(2n+1) td {
+            background: #eee;
+        }
+    }
+
+}
+
+body .license {
+    width: 748px;
+    margin: 0 auto;
+
+    @media screen and(max-width:748px) {
+        width: 100%;
+
+        >div {
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    @media screen and(min-width:748px) {
+        >div {
+            float: left;
+        }
+    }
+
+    p {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+.footer-page {
+    width: 1020px;
+    border-top: 1px solid rgb(222, 222, 222);
+    margin: 0 auto;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    @media screen and (max-width:1020px) {
+        width: 90%;
+    }
+
+    >div {
+        width: 120px;
+        height: 30px;
+        border: 1px solid rgb(222, 222, 222);
+        margin-top: 10px;
+        line-height: 30px;
+        text-align: center;
+        &:nth-child(1){
+            position: absolute;
+            left: 0;
+        }
+        &:nth-child(3){
+            position: absolute;
+            right: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        &:hover {
+            border: 1px solid red;
+            box-sizing: border-box;
+            color: red;
+            a{
+                color: red;
+            }
+        }
+    }
+}

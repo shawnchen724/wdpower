@@ -1,0 +1,60 @@
+{{extend "../common/layout.html"}} {{block 'title'}}
+<title>生产现场 - 无锡动力工程股份有限公司</title>
+{{/block}} {{block 'link'}}
+<link rel="stylesheet" href="/css/innav.css">
+<link rel="stylesheet" href="/css/inmain.css">
+<link rel="stylesheet" href="/css/idea_product_item.css"> {{/block}} {{block 'style'}} {{/block}} {{block 'content'}}
+<div class="inpage">
+    <div class="container">
+        <!-- 导航栏 -->
+        <div class="innav" data-spy="affix" data-offset-top="343.5">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#shengchan" data-toggle="tab">生产现场</a></li>
+                <li><a href="/case">案例展示</a></li>
+                <li><a href="/news">新闻动态</a></li>
+                <li><a href="/video">企业视频</a></li>
+            </ul>
+        </div>
+        <!-- 内容 -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="shengchan">
+                <div class="inmain">
+                    <div class="intitle">
+                        <h1>{{idea.title}}</h1>
+                    </div>
+                    <div class="wrapper">
+                        <div class="idea_item" style="text-align: center;">
+                            <img src="{{idea.ideaImg}}" alt="">
+                        </div>
+                    </div>
+                    <div class="wrapper1">
+                        <div class="newsbackline">
+                            <ul>
+                                <li class="prev">
+                                    <a href="javascript:;">◀ 上一篇</a>
+                                </li>
+                                <li class="backTop">
+                                    <a href="javascript:;">返回顶部</a>
+                                </li>
+                                <li class="next">
+                                    <a href="javascript:;">下一篇 ▶</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/block}} {{block 'script'}}
+<script>
+    $(function() {
+        $(".backTop").on('click', function() {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 1)
+        })
+    })
+</script>
+{{/block}}

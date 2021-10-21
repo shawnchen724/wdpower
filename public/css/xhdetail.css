@@ -1,0 +1,34 @@
+.intro .container .detail-page {
+  padding: 0 15px;
+}
+.intro .container .detail-page .detail-title h1 {
+  font-size: 30px;
+  line-height: 40px;
+  padding: 0 20px;
+  color: red;
+  font-weight: 700;
+  margin: 50px 0;
+}
+.intro .container .detail-page .detail-content .one {
+  text-indent: 2em;
+  line-height: 30px;
+  color: 30px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.intro .container .detail-page .detail-content .two img {
+  width: 750px;
+}
+.intro .container .detail-page .detail-content .four {
+  font-size: 16px;
+}
+@media screen and (max-width: 800px) {
+  .intro .container .detail-page .detail-content .two img {
+    display: block;
+    width: 100%;
+  }
+  .intro .container .detail-page .detail-content .three img {
+    display: block;
+    width: 100%;
+  }
+}

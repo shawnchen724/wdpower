@@ -1,0 +1,52 @@
+.wjs_topBar{
+    border-bottom: 1px solid #ccc;
+    color: #666;
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+    .container{
+        width: 1020px;
+        font-size: 12px;
+        height: 100%;
+        .tip {
+            float: left;
+        }
+        .rig {
+            float: right;
+            div {
+                float: left;
+            }
+            .lang {
+                margin-left: 20px;
+                border-left: 1px solid #ccc;
+                padding-left: 15px;
+                padding-right: 15px;
+                a {
+                    padding: 0 5px;
+                }
+            }
+            .tel {
+                background-color: red;
+                color: white;
+                padding: 0 5px;
+            }
+        }
+    }
+}
+@media screen and(max-width:1020px){
+    .wjs_topBar {
+        .container {
+            width: 100%;
+            padding: 0 15px;
+        }
+    }
+}
+@media screen and(max-width:745px){
+    .wjs_topBar {
+        .container {
+            .rig {
+                display: none;
+            }
+        }
+    }
+}

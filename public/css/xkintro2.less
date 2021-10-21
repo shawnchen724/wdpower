@@ -1,0 +1,42 @@
+.inbanner {
+    height: 260px;
+    position: relative;
+    background-image: url('/img/inbanner02.jpg');
+    // 设置这个就可让图片随着浏览器的窗口缩小两边同时缩小
+    background-position: center;
+    background-size: cover;
+    .container {
+        .title {
+            width: 100%;
+            position: absolute;
+            color: #fff;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            .company {
+                font-size: 40px;
+                font-weight: normal;
+            }
+            .intro {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media screen and(max-width:800px) {
+    .inbanner {
+        height: 160px;
+        .container {
+            .title {
+                .company {
+                    font-size: 30px;
+                    font-weight: normal;
+                }
+                .intro {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

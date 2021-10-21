@@ -1,0 +1,34 @@
+.navbar {
+    margin-bottom: 0;
+    .container {
+      width: 1020px;
+        .navbar-header {
+            .navbar-brand {
+                padding: 0;
+                line-height: 80px;
+                img {
+                    display: inline-block;
+                }
+            }
+        }
+        .navbar-collapse.collapse.in {
+            .nav {
+                li {
+                    a {
+                        line-height: 28px;
+                        &:hover {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:1020px){
+  .navbar {
+    .container {
+      width: 100%;
+    }
+  }
+}

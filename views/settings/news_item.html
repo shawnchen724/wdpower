@@ -1,0 +1,86 @@
+{{extend "../common/layout.html"}} {{block 'title'}}
+<title>生产现场 - 无锡动力工程股份有限公司</title>
+{{/block}} {{block 'link'}}
+<link rel="stylesheet" href="/css/innav.css">
+<link rel="stylesheet" href="/css/inmain.css">
+<link rel="stylesheet" href="/css/idea_news_item.css"> {{/block}} {{block 'style'}} {{/block}} {{block 'content'}}
+<div class="inpage">
+    <div class="container">
+        <!-- 导航栏 -->
+        <div class="innav" data-spy="affix" data-offset-top="343.5">
+            <ul class="nav nav-tabs">
+                <li><a href="/idea">生产现场</a></li>
+                <li><a href="/case">案例展示</a></li>
+                <li class="active"><a href="#xinwen" data-toggle="tab">新闻动态</a></li>
+                <li><a href="/video">企业视频</a></li>
+            </ul>
+        </div>
+        <!-- 内容 -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="xinwen">
+                <div class="inmain">
+                    <div class="intitle">
+                        <h1>{{news.title}}</h1>
+                        <div class="info">
+                            <span>作者：{{news.author}}</span>
+                            <span>时间：{{news.time}}</span>
+                            <span>点击：{{news.click}}</span>
+                        </div>
+                    </div>
+                    <div class="show">
+                        {{news.wrapper}}
+                    </div>
+                    <!-- <div class="wrapper">
+                        <p>　　2021年9月9日9时18分，在喜庆的鞭炮声中，集团公司董事长钱志翔、副董事长兼总裁陆国平、副总裁邓静与郑卫国及承建方领导一同挥动铁锹为集团新厂房大楼培上了最后一方混凝土，项目部全体人员共同见证了新厂房顺利完成主体结构施工这一重要时刻。</p>
+                        <p style="text-align: center;">
+                            <img src="/public/img/20210929082831839.jpg" alt="">
+                        </p>
+                        <p style="text-align: center;">图1 集团领导参加封顶仪式</p>
+                        <p>　　新厂房是集团子公司无锡动力工程股份有限公司和无锡卡仕精密科技有限公司联合厂房，拟规划人工关节植入物铸件年产能300万件，航空铸件年产能10万件，预计2022年中完成建设并投入使用。项目自开工以来，全体项目部人员重质量、保安全、赶工期、抓进度，历经5个月左右的时间，按要求圆满完成了主体结构封顶。</p>
+                        <p style="text-align: center;">
+                            <img src="/public/img/20210929082845232.jpg" alt="">
+                        </p>
+                        <p style="text-align: center;">图2 新厂房顺利封顶</p>
+                        <p>　　新工厂建设承载着众多万迪人的祝福与希望，期待它能助力集团谱写华彩新篇章，再创历史新辉煌。</p>
+                        <p style="text-align: center;">
+                            <img src="/public/img/20210929082900780.jpg" alt="">
+                        </p>
+                        <p style="text-align: center;">图3 集团领导视察施工现场</p>
+                        <br>
+                    </div> -->
+                    <div class="wrapper1">
+                        <div class="newsbackline">
+                            <ul>
+                                <li class="prev">
+                                    <a href="javascript:;">◀ 上一篇</a>
+                                </li>
+                                <li class="backTop">
+                                    <a href="javascript:;">返回顶部</a>
+                                </li>
+                                <li class="next">
+                                    <a href="javascript:;">下一篇 ▶</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/block}} {{block 'script'}}
+<script>
+    var html = $(".show").text();
+    $(".show").html(html)
+</script>
+<script>
+    $(function() {
+        $(".backTop").on('click', function() {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 1)
+        })
+    })
+</script>
+
+{{/block}}

@@ -1,0 +1,67 @@
+{{extend "../common/layout.html"}} {{block 'title'}}
+<title>生产现场 - 无锡动力工程股份有限公司</title>
+{{/block}} {{block 'link'}}
+<link rel="stylesheet" href="/css/innav.css">
+<link rel="stylesheet" href="/css/inmain.css">
+<link rel="stylesheet" href="/css/idea_product_item.css"> {{/block}} {{block 'style'}} {{/block}} {{block 'content'}}
+<div class="inpage">
+    <div class="container">
+        <!-- 导航栏 -->
+        <div class="innav" data-spy="affix" data-offset-top="343.5">
+            <ul class="nav nav-tabs">
+                <li><a href="/idea">生产现场</a></li>
+                <li class="active"><a href="#anli" data-toggle="tab">案例展示</a></li>
+                <li><a href="/news">新闻动态</a></li>
+                <li><a href="/vedio">企业视频</a></li>
+            </ul>
+        </div>
+        <!-- 内容 -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="anli">
+                <div class="inmain">
+                    <div class="intitle">
+                        <h1>{{cases.title}}</h1>
+                    </div>
+                    <div class="wrapper">
+                        <p style="text-align: center;">{{cases.content}}</p>
+                        <p style="text-align: center;">
+                            <img src="{{cases.img1}}" alt="">
+                        </p>
+                        <p style="text-align: center;">
+                            <img src="{{cases.img2}}" alt="">
+                        </p>
+                        <p style="text-align: center;">
+                            <img src="{{cases.img3}}" alt="">
+                        </p>
+                    </div>
+                    <div class="wrapper1">
+                        <div class="newsbackline">
+                            <ul>
+                                <li class="prev">
+                                    <a href="javascript:;">◀ 上一篇</a>
+                                </li>
+                                <li class="backTop">
+                                    <a href="javascript:;">返回顶部</a>
+                                </li>
+                                <li class="next">
+                                    <a href="javascript:;">下一篇 ▶</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/block}} {{block 'script'}}
+<script>
+    $(function() {
+        $(".backTop").on('click', function() {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 1)
+        })
+    })
+</script>
+{{/block}}

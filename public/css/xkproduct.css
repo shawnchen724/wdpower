@@ -1,0 +1,41 @@
+.row {
+  width: 1020px;
+  margin: 0 auto;
+}
+.row > div {
+  padding: 10px;
+}
+@media screen and (max-width: 1020px) {
+  .row {
+    width: 100%;
+  }
+}
+.row .img {
+  margin: 0 10px;
+  border: 1px solid black;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  color: #666;
+}
+.row .img:hover {
+  background: #ed0e00;
+  color: #fff;
+}
+.row .img:hover .nam {
+  text-decoration: none;
+}
+.row .img img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.1s;
+}
+.row .img img:hover {
+  transform: scale(1.1);
+}
+.row .img .nam {
+  line-height: 40px;
+  height: 40px;
+  overflow: hidden;
+}

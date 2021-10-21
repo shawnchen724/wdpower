@@ -1,0 +1,89 @@
+{{extend '../common/layout.html'}}
+{{block 'title'}}
+<title>资质认证</title>
+{{/block}}
+{{block 'link'}}
+<link rel="stylesheet" href="/css/xhintro.css">
+<link rel="stylesheet" href="/css/xhpage.css">
+<link rel="stylesheet" href="/css/xhhonor.css">
+{{/block}}
+{{block 'content'}}
+<!-- 标语部分 -->
+<div class="inbanner">
+    <div class="container">
+        <div class="title">
+            <div class="company text-center">公司介绍</div>
+            <div class="intro text-center">研制生产内燃机、涡轮增压器、柴油发电机组及其零部件的大型骨干企业</div>
+        </div>
+    </div>
+</div>
+<!-- 公司介绍模块 -->
+<section class="intro clearfix">
+    <div class="container">
+        <ul class="nav page-tabs text-center clearfix" data-spy="affix" data-offset-top="260">
+            <li><a href="/intro">公司简介</a></li>
+            <li class="active"><a href="/honor">资质认证</a></li>
+            <li><a href="/policy">HSE方针</a></li>
+            <li><a href="/quality">质量方针</a></li>
+            <li><a href="/culture">企业文化</a></li>
+        </ul>
+        <div class="tab-content">
+            <section class="honor">
+                <div class="honor-title text-center">
+                    <h1>荣誉</h1>
+                </div>
+                <div class="honor-img">
+                    <ul class="list-unstyled" id="picture">
+                        <li>
+                            <a href="/img/lg1.jpg"><img src="/img/sm1.jpg" alt=""></a>
+                            <p>201806江苏省机械行业品牌奖</p>
+                        </li>
+                        <li><a href="/img/lg2.jpg"><img src="/img/sm2.jpg" alt=""></a>
+                            <p>2018高新技术企业证书</p>
+                        </li>
+                        <li><a href="/img/lg3.jpg"><img src="/img/sm3.jpg" alt=""></a>
+                            <p>201801内燃机行业排头兵企业（2014-2016）</p>
+                        </li>
+                        <li><a href="/img/lg4.jpg"><img src="/img/sm4.jpg" alt=""></a>
+                            <p>2018ISO9001</p>
+                        </li>
+                        <li><a href="/img/lg5.jpg"><img src="/img/sm5.jpg" alt=""></a>
+                            <p>2018ISO14001</p>
+                        </li>
+                        <li><a href="/img/lg6.jpg"><img src="/img/sm6.jpg" alt=""></a>
+                            <p>2018OHSAS18001</p>
+                        </li>
+                        <li><a href="/img/lg7.jpg"><img src="/img/sm7.jpg" alt=""></a>
+                            <p>WD145E3TAD35国三检测报告</p>
+                        </li>
+                        <li><a href="/img/lg8.jpg"><img src="/img/sm8.jpg" alt=""></a>
+                            <p>WX287E3TAD73国三检测报告</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+<!-- 轮播图 -->
+<!-- 面纱部分 -->
+<div class="mask"></div>
+<!-- 轮播图主体部分 -->
+<div class="lb text-center">
+    <div class="lb-contain">
+        <img src="" alt="" id="lb-img">
+        <div class="lb-nav">
+            <a href="javascript:;" class="lb-prev"></a>
+            <a href="javascript:;" class="lb-next"></a>
+        </div>
+    </div>
+    <div class="lb-remove text-right">
+        <span class="close"></span>
+    </div>
+</div>
+{{/block}}
+
+{{block 'script'}}
+<script src="/js/xhindex.js"></script>
+<script src="/js/xhhonor.js"></script>
+{{/block}}
